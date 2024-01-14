@@ -6,10 +6,13 @@ import java.util.Base64.Encoder;
 
 public class PasswordService {
 
-	int i=10;
+	    int i=10;
         int j=20;
 	public static String encode(String txt)
 	{
+		// Making changes for BUG-101
+		int k=30;
+		int l=40;
 		Encoder encoder = Base64.getEncoder();
 		return encoder.encodeToString(txt.getBytes());
 	}
